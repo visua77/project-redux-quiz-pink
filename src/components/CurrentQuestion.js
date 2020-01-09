@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { quiz } from 'reducers/quiz'
 
 export const CurrentQuestion = () => {
-  const question = useSelector((state) => state.quiz.questions[state.quiz.currentQuesionIndex])
+  const question = useSelector((state) => state.quiz.questions[state.quiz.currentQuestionIndex])
   const dispatch = useDispatch()
 
   if (!question) {

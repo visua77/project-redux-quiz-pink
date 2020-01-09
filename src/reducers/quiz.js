@@ -13,7 +13,7 @@ const questions = [
 const initialState = {
     questions,
     answers: [],
-    currentQuesionIndex: 0,
+    currentQuestionIndex: 0,
     quizOver: false
 }
 
