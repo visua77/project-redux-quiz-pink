@@ -3,9 +3,9 @@ import { createSlice } from '@reduxjs/toolkit'
 // Change these to your own questions!
 const questions = [
     { id: 1, questionText: 'Which predatory-fish in freshwater is the largest one in Sweden?', options: ['Pike', 'Zander', 'Carp', 'Seatrout'], correctAnswerIndex: 0 },
-    { id: 2, questionText: 'Another name for pike-perch?', options: ['Perch', 'Cod', 'Zander', 'Herring'], correctAnswerIndex: 2 } 
-    { id: 3, questionText: 'Which fish is the largest on the planet?', options: ['Blue whale', 'Great white shark', 'Bluefin tuna', 'Whale shark'], correctAnswerIndex: 3 }
-    { id: 4, questionText: 'All of the following are fish EXCEPT one, which one is that?', options: ['Jellyfish', 'Seahorse', 'Moray eel', 'Lionfish'], correctAnswerIndex: 0 }
+    { id: 2, questionText: 'Another name for pike-perch?', options: ['Perch', 'Cod', 'Zander', 'Herring'], correctAnswerIndex: 2 },
+    { id: 3, questionText: 'Which fish is the largest on the planet?', options: ['Blue whale', 'Great white shark', 'Bluefin tuna', 'Whale shark'], correctAnswerIndex: 3 },
+    { id: 4, questionText: 'All of the following are fish EXCEPT one, which one is that?', options: ['Jellyfish', 'Seahorse', 'Moray eel', 'Lionfish'], correctAnswerIndex: 0 },
     { id: 5, questionText: 'Which is the fastest fish of the ocean?', options: ['Bluefin tuna', 'Flying fish', 'Dorado', 'Sailfish'], correctAnswerIndex: 3 }
   ]
 
