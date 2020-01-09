@@ -9,7 +9,7 @@ export const Summary = () => {
             {answers.map((answer) => (
                 <div>
                     <h3>{answer.question.id} {answer.question.questionText}</h3>
-                    <p>Your answer was: {answer.answer} and it is {answer.isCorrect ? 'correct' : 'wrong'}</p>
+                    <p>Your answer was: {answer.answer} and it is {answer.isCorrect ? 'correct' : 'wrong' }</p>
                 </div>
             ))}
         </>

@@ -19,10 +19,7 @@ export const Answer = () => {
       )}
       <button
         type="button"
-        onClick={() => dispatch(quiz.actions.goToNextQuestion())}
-      >
-        NEXT
-      </button>
+        onClick={() => dispatch(quiz.actions.goToNextQuestion())}>NEXT</button>
     </div>
   );
 };
