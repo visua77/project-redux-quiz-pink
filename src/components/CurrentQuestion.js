@@ -24,26 +24,27 @@ export const CurrentQuestion = () => {
   };
 
   return (
-    <div>
+    <div className="questions">
       {!isFinished && (
         <>
-          <h1>Question: {question.questionText}</h1>
-          {answers.length < question.id && (
-            <>
-              {question.options.map((e, index) => {
-                return (
-                  <button
-                    key={index}
-                    type="button"
-                    onClick={() => handleClick(index)}
-                  >
-                    {e}
-                  </button>
-                );
-              })}
-            </>
-          )}
-          {answers.length === question.id && <Answer />}
+          <h2>Question: {question.questionText}</h2>
+
+            {answers.length < question.id && (
+              <div className="wrapper">
+                {question.options.map((e, index) => {
+                  return (
+                    <button
+                      key={index}
+                      type="button"
+                      onClick={() => handleClick(index)}
+                    >
+                      {e}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+            {answers.length === question.id && <Answer />}
           <Counter />
         </>
       )}

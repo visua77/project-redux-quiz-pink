@@ -11,7 +11,7 @@ export const Answer = () => {
   const photoPath = `../img/${answer.questionId}.jpg`;
 
   return (
-    <div>
+    <div className="answer">
       {answer.isCorrect && <h3>YEAH!! {answer.answer} is a GOOD answer!!</h3>}
       {!answer.isCorrect && (
         <h3>
@@ -19,7 +19,7 @@ export const Answer = () => {
           {answer.question.options[answer.question.correctAnswerIndex]}
         </h3>
       )}
-      <img src={photoPath} />
+      <img src={photoPath} alt="correct answer" />
       <button
         type="button"
         onClick={() => dispatch(quiz.actions.goToNextQuestion())}
