@@ -30,7 +30,6 @@ export const CurrentQuestion = () => {
         <>
           <Counter />
           <h2>Question: {question.questionText}</h2>
-
           {answers.length < question.id && (
             <div className="wrapper">
               {question.options.map((e, index) => {
@@ -49,11 +48,12 @@ export const CurrentQuestion = () => {
           {answers.length === question.id && <Answer />}
         </>
       )}
-      {isFinished &&
+      {isFinished && (
         <>
-        <Points />
-        <Summary />
-        </>}
+          <Points />
+          <Summary />
+        </>
+      )}
     </div>
   );
 };
