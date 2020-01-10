@@ -4,6 +4,7 @@ import { quiz } from "reducers/quiz";
 import { Answer } from "components/Answer";
 import { Summary } from "components/Summary";
 import { Counter } from "components/Counter";
+import { Points } from "components/Points";
 
 export const CurrentQuestion = () => {
   const question = useSelector(
@@ -27,28 +28,32 @@ export const CurrentQuestion = () => {
     <div className="questions">
       {!isFinished && (
         <>
+          <Counter />
           <h2>Question: {question.questionText}</h2>
 
-            {answers.length < question.id && (
-              <div className="wrapper">
-                {question.options.map((e, index) => {
-                  return (
-                    <button
-                      key={index}
-                      type="button"
-                      onClick={() => handleClick(index)}
-                    >
-                      {e}
-                    </button>
-                  );
-                })}
-              </div>
-            )}
-            {answers.length === question.id && <Answer />}
-          <Counter />
+          {answers.length < question.id && (
+            <div className="wrapper">
+              {question.options.map((e, index) => {
+                return (
+                  <button
+                    key={index}
+                    type="button"
+                    onClick={() => handleClick(index)}
+                  >
+                    {e}
+                  </button>
+                );
+              })}
+            </div>
+          )}
+          {answers.length === question.id && <Answer />}
         </>
       )}
-      {isFinished && <Summary />}
+      {isFinished &&
+        <>
+        <Points />
+        <Summary />
+        </>}
     </div>
   );
 };

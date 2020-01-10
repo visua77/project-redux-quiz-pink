@@ -10,14 +10,12 @@
 }
 
 body {
-  margin: 0;
-  padding:0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f5dea3;
+  background-color: #02a8a8;
 }
 
 code {
@@ -50,13 +48,10 @@ header h1 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding-top:30px;
-  background-color: #02a8a8;
 }
 
 .wrapper {
   width: 100%;
-  padding:20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -69,8 +64,7 @@ header h1 {
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  margin-bottom: 0;
-  padding:30px;
+  padding:20px;
   background-color: #42e6a4 ;
 }
 
@@ -90,4 +84,13 @@ button {
 
 img {
   width: 25%;
+  margin-top:15px;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+h3 {
+  padding: 20px;
 }

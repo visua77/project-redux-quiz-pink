@@ -12,12 +12,12 @@ export const Answer = () => {
 
   return (
     <div className="answer">
-      {answer.isCorrect && <h3>YEAH!! {answer.answer} is a GOOD answer!!</h3>}
+      {answer.isCorrect && <h4>YEAH!! {answer.answer} is a GOOD answer!!</h4>}
       {!answer.isCorrect && (
-        <h3>
+        <h4>
           No, {answer.answer} is wrong. Correct answer was{" "}
           {answer.question.options[answer.question.correctAnswerIndex]}
-        </h3>
+        </h4>
       )}
       <img src={photoPath} alt="correct answer" />
       <button
